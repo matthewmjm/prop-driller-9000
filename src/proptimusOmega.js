@@ -1,4 +1,5 @@
 import React from 'react';
+import ProptimusBeta from './proptimusBeta';
 
 export default class ProptimusOmega extends React.Component {
   constructor(props) {
@@ -8,16 +9,36 @@ export default class ProptimusOmega extends React.Component {
     }
   }
 
-  render() {
+  handleClick = (event) => {
+    this.setState({
+      escalate: true
+    })
+    this.props.callForBetterHelp(event) 
+  }
+
+  render() { 
     return(
       <section>
-        <img
-          src={/*Identify your image source from your props here.*/}
-          className="App-logo"
-          alt="logo"
-          onClick={this.props.callForBetterHelp}
-        />
-        <p>{this.props.catchPhrase}</p>
+        {/* <p>Are you sure this situation warrants this?</p> */}
+        {
+          this.state.escalate
+          ? <ProptimusBeta
+              catchPhrase="I am the middle drilled prop - Proptimus Beta!"  
+              images={this.props.images}
+              activeProp={this.props.activeProp}
+              gimmeAllYouGot={this.props.gimmeAllYouGot}
+              sendThemHome={this.props.sendThemHome}  
+            />
+          : <>
+            <img
+              src={this.props.images[this.props.activeProp]} /*Identify your image source from your props here.*/
+              className="App-logo"
+              alt="logo"
+              onClick={this.handleClick}
+            />
+            <p>{this.props.catchPhrase}</p>
+            </>
+        }
       </section>
     )
   }

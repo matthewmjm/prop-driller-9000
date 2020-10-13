@@ -101,3 +101,25 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+
+### FROM THE WALK-THRU VIDEO
+Propdriller 9000
+
+Will this do human?
+I am the first drilled prop - Proptimus Omega…
+Bad help has arrived!
+
+
+Are you sure this situation warrants this?
+I am the middle drilled prop - Proptimus Beta!
+Better help has arrived.
+
+There are no bigger guns!
+I am the last drilled prop - Proptimus Prime!!!
+It’s time to kick brass!
+
+-
+-
+I am Proptimus Prime, and I send this message to any surviving Proptobots taking refuge among the state: We are here. We are waiting
